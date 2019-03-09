@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=B612" rel="stylesheet">
+
+<style>
+body, html {
+  height: 100%;
+font-family: 'B612', sans-serif;
+}
+
+
+.imgdiv {
+  position: absolute;
+  top:0%;
+  bottom:0%;
+  left:0%;
+  width: 450px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 5px;
+  float: center;
+}
+.img {
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  top: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 650px;
+  margin: 0 auto;
+  padding: 0px;
+  background-color: white;
+  float: center;
+}
+
+
+.frmdiv{
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  width: 500px;
+  height: 650px;
+  margin: 0 auto;
+  padding: 0px;
+  background-color: white;
+  float: center;
+}
+
+.form {
+  position: absolute;
+  right: 0%;
+  left: 4%;
+  top: 20%;
+  bottom: 0%;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0px;
+  background-color: white;
+  float: center;
+}
+
+body{
+  background: #f7d7b2;
+  min-height: 700px;
+  background-position: center;
+  background-repeat: no repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+input[type=text], input[type=text], input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border-radius: 5px;
+  background: #e5e6e8;
+}
+
+input[type=text]:focus, input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.btn {
+  background-color: white;
+  color: #0099ff;
+  border: solid;
+  border color: #0099ff;
+  border-radius: 5px;
+  border-size: 1px;
+  padding: 2px 5px;
+  cursor: pointer;
+  width: 80px;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="imgdiv">
+  <img src="./image.png" class="img">
+</div>
+
+<div class="frmdiv">
+  <form action="" method="post" class="form">
+    <h1 style="text-align: left;">Register</h1>
+    <label>Email Address </label><br>
+    <input type="text" placeholder="Enter EmailId..." name="emailid" required><br>
+
+    <label>Password: </label><br>
+    <input type="password" placeholder="Enter Password" name="password" required><br>
+    Already Registered? Login <a href="/login">here</a><br><br>
+    <button type="submit" class="btn">Submit</button><br><br>
+    </form>
+</div>
+
+
+
+</body>
+</html>
